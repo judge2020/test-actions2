@@ -1,6 +1,9 @@
 name: run in container
+on: push
+
 jobs:
   test:
+    runs-on: [ubuntu-latest]
     container:
       image: golang:latest
     steps:
