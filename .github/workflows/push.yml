@@ -1,0 +1,7 @@
+name: run in container
+jobs:
+  test:
+    container:
+      image: golang:latest
+    steps:
+      - run: go version
