@@ -7,4 +7,5 @@ jobs:
     container:
       image: golang:latest
     steps:
+      - uses: actions/checkout@v1
       - run: go version
